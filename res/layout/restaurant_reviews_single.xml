@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_border_style"
+        android:orientation="vertical" 
+        android:layout_margin="5dp">  
+        <LinearLayout
+            android:id="@+id/box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/menu_background_style"
+            android:orientation="horizontal" >
+      <LinearLayout
+                android:id="@+id/box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:orientation="vertical"
+                android:padding="5dp" >
+                    
+                <TextView
+                    android:id="@+id/review_resname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:paddingBottom="2dip"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dip"
+                    android:textColor="#333"
+                    android:textSize="16sp"
+                    android:text="Restaurant Name "
+                    android:textStyle="bold" /> 
+                     
+<TextView
+                    android:id="@+id/review_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="2dip"
+                    android:paddingLeft="4dp"
+                    android:text="Review text "
+                    android:textColor="#5d5d5d" 
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/review_uname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="2dip"   
+                    android:text="Username"
+                    android:layout_gravity="right"
+                    android:textColor="#acacac" 
+                    android:textStyle="bold"/>
+                
+	</LinearLayout>
+   </LinearLayout>
+   </LinearLayout>
+</LinearLayout>

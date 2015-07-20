@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content" >
+       
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:text="This app allows users to view restaurant details around their location"/>
+    
+<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:text="It lets users sent requests to particular restaurants of their choice to be reserved tables or take away packages "/>
+
+<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:text="Users have to register for notification service in order to sent notifications to restaurants"/>
+
+<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:text="The app also lets restaurant owners add details about their restaurant and types of meals they offer"/>
+
+<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:text="Only restaurant owners can add or edit meal details"/>
+
+<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:text="Restaurant owners have to register for notification service in order to sent and receive requests from their customers"/>
+
+<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:text="The application requires a stable internet connection for its functionalities to work perfectly"/>
+
+<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:text="You can Long press on a list item for more options..."
+        />
+<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:text="Users are able to add and read reviews about a particular restaurant services"
+        />
+
+<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:text="In case of unexpected results, feel free to contact the developer ::jamesshisiah@gmail.com::"/>
+</LinearLayout>
+</ScrollView>

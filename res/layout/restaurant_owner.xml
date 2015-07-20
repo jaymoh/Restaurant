@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+        <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     >
+    
+            <EditText android:id="@+id/first_name"
+		    android:layout_height="wrap_content"
+		    android:layout_width="250dp"
+		    android:layout_margin="10dp"
+		    android:padding="5dp"
+		    android:paddingTop="40dp" 
+		    android:hint="First Name"
+		    android:layout_gravity="center"
+		    android:gravity="center"
+		    />
+             <EditText android:id="@+id/last_name"
+		    android:layout_height="wrap_content"
+		    android:layout_width="250dp"
+		    android:layout_margin="10dp"
+		    android:padding="5dp"
+		    android:layout_marginTop="20dp"
+		    android:hint="Last Name"
+		    android:layout_gravity="center"
+		    android:gravity="center"
+		    />
+              <EditText android:id="@+id/user_name"
+		    android:layout_height="wrap_content"
+		    android:layout_width="250dp"
+		    android:layout_margin="10dp"
+		    android:padding="5dp"
+		    android:layout_marginTop="20dp"
+		    android:hint="User Name"
+		    android:layout_gravity="center"
+		    android:gravity="center"
+		    />
+              <EditText android:id="@+id/pass_word"
+		    android:layout_height="wrap_content"
+		    android:layout_width="250dp"
+		    android:inputType="textPassword"
+		    android:layout_margin="10dp"
+		    android:padding="5dp"
+		    android:layout_marginTop="20dp"
+		    android:hint="Pass Word"
+		    android:layout_gravity="center"
+		    android:gravity="center"
+		     android:imeOptions="actionDone"
+		    />
+              
+              <Button
+                android:id="@+id/addOwner"
+                style="@style/AppBaseTheme"
+                android:layout_margin="15dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Add Owner" 
+                android:background="@drawable/menu_border_style"/>
+            
+            </LinearLayout>
+    
+    <ListView
+        android:id="@+id/list_slidermenu"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="#00FFFF"
+        android:dividerHeight="1dp"       
+        android:listSelector="@drawable/list_selector"
+        android:background="@android:color/background_light"/>
+</android.support.v4.widget.DrawerLayout>

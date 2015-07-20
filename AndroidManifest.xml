@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jaymoh.restaurant"
+    android:versionCode="1"
+    android:versionName="1.0" >
+   
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    
+    <permission android:name="com.jaymoh.restaurant.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+	<uses-permission android:name="com.jaymoh.restaurant.C2D_MESSAGE"/>
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/restaurant"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.jaymoh.restaurant.Restaurant"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.jaymoh.restaurant.MainActivity" />
+        
+         
+         <activity android:name="com.jaymoh.restaurant.RestaurantSelected" 
+             android:label="Menu List"
+             android:parentActivityName="com.jaymoh.restaurant.Restaurant">
+             <meta-data
+                 android:name="android.support.PARENT_ACTIVITY"
+                 android:value="com.jaymoh.restaurant.Restaurant"/>
+         </activity>
+         <activity android:name="com.jaymoh.restaurant.RestaurantOwner" 
+             android:label="Add Restaurant Owner" />
+         <activity android:name="com.jaymoh.restaurant.OwnerLogin"
+             android:label="Restaurant Owner login" />
+         <activity android:name="com.jaymoh.restaurant.MealSetter" 
+             android:label="Set Meals"></activity>
+         <activity android:name="com.jaymoh.restaurant.RestaurantName"
+             android:label="Restaurant Details" 
+            android:parentActivityName="com.jaymoh.restaurant.MealSetter" >
+             <meta-data
+                 android:name="android.support.PARENT_ACTIVITY"
+                 android:value="com.jaymoh.restaurant.MealSetter"/>
+             </activity>
+         
+         <activity android:name="com.jaymoh.restaurant.EditMenuList" 
+             android:label="Edit Meal List"
+             android:parentActivityName="com.jaymoh.restaurant.MealSetter">
+             <meta-data
+                 android:name="android.support.PARENT_ACTIVITY"
+                 android:value="com.jaymoh.restaurant.MealSetter"/>
+         </activity>
+         
+         <activity android:name="com.jaymoh.restaurant.EditMenuItem" 
+             android:label="Edit Item"
+             android:parentActivityName="com.jaymoh.restaurant.EditMenuList">
+             <meta-data
+                 android:name="android.support.PARENT_ACTIVITY"
+                 android:value="com.jaymoh.restaurant.EditMenuList"/>
+         </activity>
+         <activity android:name="com.jaymoh.restaurant.RegisterGcm"
+             android:label="Notification Service"></activity>
+         <activity android:name="com.jaymoh.restaurant.RegisterGcmHotel" />
+         <activity android:name="com.jaymoh.restaurant.ReadMessageOwner"
+             android:label="Messages" />
+         <activity android:name="com.jaymoh.restaurant.RestaurantReviews" android:label="Reviews"></activity>
+         
+         <activity android:name="com.jaymoh.restaurant.AddReview"
+             android:label="Add Review" 
+            android:parentActivityName="com.jaymoh.restaurant.RestaurantReviews" >
+             <meta-data
+                 android:name="android.support.PARENT_ACTIVITY"
+                 android:value="com.jaymoh.restaurant.RestaurantReviews"/>
+             </activity>
+             <activity android:name="com.jaymoh.restaurant.ReadMessageCustomer" android:label="Messages"/>
+             
+             <activity android:name="com.jaymoh.restaurant.ReplyNotification" android:label="Reply"
+                android:parentActivityName="com.jaymoh.restaurant.ReadMessageOwner" >
+                 <meta-data
+                 android:name="android.support.PARENT_ACTIVITY"
+                 android:value="com.jaymoh.restaurant.ReadMessageOwner"/>
+             </activity>
+    </application>
+
+</manifest>

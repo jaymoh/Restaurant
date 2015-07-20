@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/infoTxt"
+        android:text="Select Restaurant below"/>
+    
+    <Spinner android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/res_spinner"
+    android:prompt="@string/res_prompt"
+    android:layout_gravity="center"
+    />
+    
+    <EditText
+        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Type your review"
+            android:ems="15"
+            android:lines="5"
+            android:id="@+id/review"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:paddingTop="40dp" 
+            android:textSize="15sp"
+            android:textColor="#000000"/>
+    <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Add Review"
+            android:id="@+id/reviewSubmit"
+            android:background="@drawable/menu_border_style"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:layout_margin="10px"
+            />
+
+</LinearLayout>

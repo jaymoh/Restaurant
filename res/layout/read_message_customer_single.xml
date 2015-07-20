@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    >
+    <TextView android:layout_width="5dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:id="@+id/rowID"
+        android:text="1"
+        android:visibility="invisible"/>
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:id="@+id/hotelnameReply"
+        android:text="Meal Name"/>
+    
+<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:id="@+id/mealnameReply"
+        android:text="Meal Name"/>
+
+<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:id="@+id/confirmationReply"
+        android:text="Confirmation"/>
+
+</LinearLayout>

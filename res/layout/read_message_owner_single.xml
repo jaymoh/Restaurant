@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <TextView android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:id="@+id/req_Id"
+        android:visibility="invisible"
+        android:text="1"/>
+    
+<TextView android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:id="@+id/req_username"
+        android:text="Username"/>
+
+<TextView android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:id="@+id/req_mealname"
+        android:text="Meal name name"/>
+
+<TextView android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:id="@+id/req_message"
+        android:text="Message Message Message"/>
+
+</LinearLayout>

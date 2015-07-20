@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Restaurant</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string-array name="nav_drawer_items">
+        <item>Restaurants</item>
+        <item>Cotrols</item>
+        <item >Messages</item>
+        <item>Reviews</item>
+        <item >About</item>
+    </string-array>
+    <string name="res_prompt">Select Restaurant</string>
+    
+     <array name="nav_drawer_icons">
+        <item>@drawable/home</item>
+        <item>@drawable/restaurant_around</item>
+        <item>@drawable/available_meals</item>
+        <item>@drawable/your_stuff</item>
+        <item>@drawable/help</item>
+    </array>
+    
+    <string name="desc_list_item_icon"></string>
+</resources>
